@@ -1,0 +1,38 @@
+#wrapper {
+    width: 80%;
+    background: #FEFAEB;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    background: #FCEBB6;
+    color: #221811;
+    font-family: Tahoma, sans-serif;
+}
+
+header {
+    background: #D2B48C;
+    color: #8C3826;
+    text-align: center;
+}
+
+h1 {
+    line-height: 200%;
+}
+
+h2 {
+    color: #8C3826;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background: #D2B48C;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+}
