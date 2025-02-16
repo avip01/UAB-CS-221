@@ -1,0 +1,68 @@
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #EEEEEE; /* Base background */
+    color: #1C1C1E; /* Dark text for readability */
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background-color: #FFFFFF; /* Bold header color */
+    border-bottom: 1px solid #E5E5E5;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #1C1C1E;
+}
+
+nav{
+    margin-top: 15px;
+}
+
+nav a {
+    color: #0071E3;
+    margin: 0 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+#Footer {
+    background: #FAFAFA;
+    color: #1C1C1E;
+    border-radius: 8px;
+    margin-top: 40px;
+    padding: 30px 20px;
+    border-top: 1px solid #E5E5E5;
+}
+
+h2 {
+    color: #1C1C1E;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
