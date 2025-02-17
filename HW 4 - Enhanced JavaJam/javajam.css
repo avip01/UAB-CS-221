@@ -18,6 +18,7 @@ header {
 }
 
 h1 {
+    font-family: 'Lobster', cursive;
     line-height: 200%;
 }
 
@@ -28,6 +29,14 @@ h2 {
 nav {
     text-align: center;
     font-weight: bold;
+}
+
+nav a{
+    color: #8A3324;
+}
+
+a:hover{
+    color: #BC8F8F;
 }
 
 footer {
