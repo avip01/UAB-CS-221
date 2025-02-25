@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    text-align: center;
+    border-bottom: 4px solid #B1C29E;
+    background: #FCE7C8;
+    color: #633447;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background: #FADA7A;
+    color: #633447;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background: #F0A04B;
+    color: #633447;
+}
+
+p {
+    padding: 1em;
+}
