@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    overflow-x: hidden; /* https://www.w3schools.com/cssref/css3_pr_overflow-x.php */
+}
+
+header {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #483D8B;
+    color: #FFFFFF;
+}
+
+#Products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 3px;
+}
+
+#product1, #product2, #product3, #product4, #product5, #product6 {
+    background-color: #FFFFFF;
+    display: grid;
+    border-radius: 9px;
+    padding: 10px;
+    margin: 10px;
+    grid-template-rows: 50px;
+    border: 2px solid #000;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#product1:hover, #product2:hover, #product3:hover, #product4:hover, #product5:hover, #product6:hover{
+    background-color: #E6E6FA;
+    color: #333333;
+}
+
+.price{
+    color: #1A3764;
+}
+
+.button{
+    background-color: #61A0AF;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.button:hover{
+    background-color: #1A3764;
+    color: #fff;
+}
+
+#Footer{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    #Products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #Products {
+        grid-template-columns: 1fr;
+    }
+}
