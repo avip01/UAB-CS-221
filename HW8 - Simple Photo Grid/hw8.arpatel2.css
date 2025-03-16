@@ -1,0 +1,123 @@
+main{
+    width:100%
+}
+
+header{
+    text-align: center;
+}
+
+#SunsetGrid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 30px;
+    margin: 3px;
+}
+
+.sunsets{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.sunsets:hover{
+    transform: scale(1.1);
+}
+
+.sunsets:nth-child(2) {
+    border: 5px solid #EFBF04;
+}
+
+.sunsets:nth-child(4) {
+    border: 5px dotted #D1C3B7;
+}
+
+.sunsets:nth-child(6) {
+    border: 5px dashed #FF9899;
+}
+
+.sunsets:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sunsets:hover::before {
+    opacity: 1;
+}
+
+.sunsets:nth-child(1)::before {
+    content: "Exposed Sunset in Backyard";
+}
+
+.sunsets:nth-child(2)::before {
+    content: "Evening in Dubai";
+}
+
+.sunsets:nth-child(3)::before {
+    content: "Colorful Sunset in Backyard";
+}
+
+.sunsets:nth-child(4)::before {
+    content: "Palm Jumeriah Nightfall";
+}
+
+.sunsets:nth-child(5)::before {
+    content: "UAB Campus Sunset";
+}
+
+.sunsets:nth-child(6)::before {
+    content: "Sunset Across the Bay";
+}
+
+
+
+.sunsets:nth-child(1) {
+    background-image: url('photos/sunset1.JPG');
+}
+
+.sunsets:nth-child(2) {
+    background-image: url('photos/sunset2.JPG');
+}
+
+.sunsets:nth-child(3) {
+    background-image: url('photos/sunset3.JPG');
+}
+
+.sunsets:nth-child(4) {
+    background-image: url('photos/sunset4.JPG');
+}
+
+.sunsets:nth-child(5) {
+    background-image: url('photos/sunset5.JPG');
+}
+
+.sunsets:nth-child(6) {
+    background-image: url('photos/sunset6.JPG');
+}
+
+@media (max-width: 900px) {
+    #SunsetGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #SunsetGrid {
+        grid-template-columns: 1fr;
+    }
+}
