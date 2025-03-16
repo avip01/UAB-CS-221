@@ -1,0 +1,269 @@
+/* Global styles setting base typography adjustment, alignment, and background for the body */
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #EEEEEE; /* Base background */
+    color: #1C1C1E; /* Dark text for readability */
+    padding: 20px; /* margin spacing */
+    margin: 0;
+}
+
+/* Header styling with a white background and a bottom border for visual separation */
+header {
+    background-color: #FFFFFF; /* Bold header color */
+    border-bottom: 1px solid #E5E5E5;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+nav{
+    margin-top: 15px; /* For navigation links to ensure spacing from other elements */
+}
+
+/* Styling for all anchor tags with a focus on color, weight, and interaction states */
+a {
+    color: #0071E3;
+    margin: 0 15px;
+    font-weight: 600; /* boldness */
+    text-decoration: none;
+    transition: text-decoration 0.3s; /* Stating animation time for actions like on click */
+}
+
+/* When hover, nav links will be underlined and change colors */
+a:hover {
+    text-decoration: underline;
+    color: #2C528C;
+}
+
+/* Changes relative position of nav link when pressed */
+nav a:active {
+    position: relative;
+    top: 2px; /* Moves the link down 2 pixels when clicked */
+}
+
+/* Lowers nav link of current page indefinitely  */
+.home-link-lowered {
+    position: relative;
+    top: 3px;
+}
+
+.projects-link-lowered {
+    position: relative;
+    top: 3px;
+}
+
+.contact-link-lowered {
+    position: relative;
+    top: 3px;
+}
+
+/* Home icon to go back to starting page from anywhere on the website */
+.home-icon {
+    position: relative;
+    top: -100px; /* Distance from the top of the container */
+    left: 700px; /* Distance from the left of the container */
+}
+
+/* Image used for home icon */
+.home-icon img {
+    position: absolute;
+    width: 75px;       /* Adjust the width as necessary */
+    height: 75px;      /* Adjust the height as necessary */
+}
+
+/* Picture of me in "About Me" section rounded */
+.profile-picture{
+    width: 40%;
+    height: auto;
+    border-radius: 60%;
+}
+
+/* Picture of something I enjoy rounded */
+.sunset {
+    width: 40%;
+    height: auto;
+    border-radius: 60%;
+}
+
+/* Separates each subheading from the contents/description. Gives a visually appealing look. */
+section h2 {
+    border-bottom: 3px solid #ccc; /* Thin gray line */
+    padding-bottom: 10px; /* Space between text and border */
+    margin-bottom: 20px; /* Space below the border */
+}
+
+/* Divided each project within its own div to make it visually appealing */
+#Projects div {
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Photo 1 of Project #1 Dimensions Changes */
+.CCapp {
+    width: 100%;          /* Adheres to the size of the website */
+    max-width: 700px;     /* Limits the maximum width to 200px */
+    height: auto;         /* Maintains aspect ratio of photo */
+    border-radius: 10px;  /* Keeps the soft, rounded corners */
+    display: block;       /* Ensures the image is properly blocked out */
+    margin: 0 auto;       /* Margin Changing */
+}
+
+/* Photo 2 of Project #1 Dimensions Changes */
+.CCapp2 {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Photo 1 of Project #2 Dimensions Changes */
+.FarmDemo {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Photo 2 of Project #2 Dimensions Changes */
+.FarmDashboard {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Photo 1 of Project #3 Dimensions Changes */
+.RaatCode {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Photo 2 of Project #3 Dimensions Changes */
+.RaatPhoto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header title changing size and letter spacing for readability */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;    /* Margin Changing */
+    font-weight: 400;       /* lighter weight for a sleek look */
+    letter-spacing: 2px;    /* Distance between letters */
+    color: #1C1C1E;         /* Text Color */
+}
+
+/* General section styling for consistency in background and spacing */
+section {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+/* Specific styles for contact links to enhance visibility and interactivity */
+#Contact {
+    text-align: center;
+    padding-left: 20px;
+}
+
+#Contact a {
+    color: #0071E3;  /* Keeping your existing Apple blue from nav */
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Hover on nav links changes */
+#Contact a:hover {
+    text-decoration: underline;
+    color: #2C528C;
+}
+
+/* Setting Dimensions of both icons */
+.mailicon {
+    width: 15%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.linkedinicon {
+    width: 15%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+/* Change Contact Icons on hover to be enlarged */
+.mailicon:hover{
+    transform: scale(1.2);
+}
+
+.linkedinicon:hover{
+    transform: scale(1.2);
+}
+
+/* Rectangle around each contact for readability */
+.LinkRectangle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid #E5E5E5; /* Thick gray border */
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 8px; /* Optional: rounded corners */
+    text-align: center;
+    width: 300px;
+}
+
+/* Footer dimensions and characteristics changes */
+#Footer {
+    background: #FAFAFA;
+    color: #1C1C1E;
+    border-radius: 8px;
+    margin-top: 40px;
+    padding: 30px 20px;
+    border-top: 1px solid #E5E5E5;
+}
+
+/* h2 subheading change */
+h2 {
+    color: #1C1C1E;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* paragraph (not associated with parent) changes */
+p {
+    margin-bottom: 15px;
+}
