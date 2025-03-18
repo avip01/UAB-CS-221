@@ -4,6 +4,10 @@ main{
 
 header{
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #FFFFFF;
 }
 
 #SunsetGrid{
@@ -18,7 +22,7 @@ header{
     width: 300px;
     height: 300px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow */
     border-radius: 8px;
     background-size: cover;
     background-position: center;
@@ -47,7 +51,8 @@ header{
     height: 100%;
     position: absolute;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 35px;
     justify-content: center;
     color: #FFFFFF;
     font-weight: bold;
@@ -84,7 +89,20 @@ header{
     content: "Sunset Across the Bay";
 }
 
+.sunsets:after{
+    content: "🔍";
+    position: absolute;
+    bottom: 140px;
+    right: 140px;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
 
+.sunsets:hover::after {
+    opacity: 1;
+}
 
 .sunsets:nth-child(1) {
     background-image: url('photos/sunset1.JPG');

@@ -28,11 +28,24 @@
 <section id="Contact">
   <h2>Contact Me</h2>
 
+  <div class="rectangleSection">
   <div class="LinkRectangle">
-  <a href="mailto:arpatel2@uab.edu">
+  <a href="mailto:notreal@fake.com">
     <img src="Images/mailicon.png" alt="Mail Icon" class="mailicon"/>
   </a>
-    <a href="mailto:arpatel2@uab.edu">Send Email</a>
+    <a href="mailto:notreal@fake.com">Send Email</a>
+
+    <form action="mailto:notreal@fake.com" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+
   </div>
 
   <div class="LinkRectangle">
@@ -40,6 +53,7 @@
     <img src="Images/linkedinicon.png" alt="LinkedIn Icon" class="linkedinicon"/>
   </a>
     <a href="https://www.linkedin.com/in/arpatel2004/">LinkedIn</a>
+  </div>
   </div>
 
 </section>
