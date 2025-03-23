@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Checker</title>
+<style>
+  body{
+    background: #595959;
+  }
+</style>
+<script>
+  function numberChecker() {
+    const userPrompt = prompt("Please input a number: ");
+
+    const Number = parseFloat(userPrompt); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat
+
+    if (Number % 2 == 0) {
+      console.log(Number + " is an even number!");
+
+    }
+    else {
+      console.log(Number + " is an odd number!");
+    }
+
+  }
+
+  window.onload = numberChecker; //https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
