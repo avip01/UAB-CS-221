@@ -1,0 +1,106 @@
+#wrapper {
+    width: 100%;
+    background: #FEFAEB;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FAF9F6;
+    color: #221811;
+    font-family: 'aw-conqueror-didot', serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: 'aw-conqueror-didot', serif;
+}
+
+header {
+    background-image: url('images/coffeeHeader.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: 'cormorant-garamond', serif;
+    line-height: 200%;
+    padding-left: 20px;
+}
+
+h2 {
+    color: #8c512d;
+    text-align: left;
+    font-family: 'aw-conqueror-didot', serif;
+    font-weight: bold;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    padding: 0 0 10px 50px;
+}
+
+nav a{
+    color: #FFF;
+    margin-right: 10px;
+}
+
+a:hover{
+    color: #8c512d;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.menuItem {
+    background-color: #FFFFFF;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #8c512d;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background: #D2B48C;
+    color: #3D2B1F;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
