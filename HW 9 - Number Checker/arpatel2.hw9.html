@@ -10,21 +10,34 @@
 </style>
 <script>
   function numberChecker() {
-    const userPrompt = prompt("Please input a number: ");
+    const userPrompt = prompt("Please input a number: "); // This was to simply start the code asking the user input a value. Started with "const" for good coding practice.
+                                                         // Prompt method was used to essentially show up immediately for the user to input.
 
     const Number = parseFloat(userPrompt); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat
+                                          // I used "parseFloat" here to convert the inputted string into a float, so that it can easily be recognized in the conditionals below.
 
-    if (Number % 2 == 0) {
-      console.log(Number + " is an even number!");
+      if (isNaN(Number)){ //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+          console.log(userPrompt + " is not a number!"); // This If statement essentially takes the inputted value and ensures that it is a valid number to proceed into the rest of the code.
+          return                                        /* It will return and stop from going to thr rest of conditional if that criteria is met. I originally used "Number == NaN" but that
+                                                        did not work as NaN does not equate to anything so it will not work as expected. I switched to isNaN to be able to fix that. */
+      }
+
+    if (Number % 2 == 0) { // This If conditional will take in the parsed float and will make sure that it has no remainders when modulus is used. No remainder will mean that it is even.
+      console.log(Number + " is an even number!"); // The output is done through console log as normal with text after to let the user know what type of number it is.
 
     }
-    else {
-      console.log(Number + " is an odd number!");
+    else if (Number % 2 == 1) {
+      console.log(Number + " is an odd number!"); // I used an else if statement as it was appropriate. If it had a remainder of 1, it would return that it is an odd number.
+    }
+
+    else { // This else statement was only used for the fact that people can enter in decimal points. So, to avoid that, I added a statement that tells the user that it is not a valid input.
+        console.log(Number + " is not a valid input... sorry.")
     }
 
   }
 
   window.onload = numberChecker; //https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+                                // The output needed for the code to work. I had to search what the output was. i figured originally that it was "console.log", but I found that out to be false.
 
 </script>
 </head>
