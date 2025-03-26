@@ -184,6 +184,46 @@ a:hover{
     }
 }
 
+.table {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+table th {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #D2B48C;
+}
+
+table tr:hover {
+    background-color: #303030;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
 footer {
     background: #D2B48C;
     color: #3D2B1F;
