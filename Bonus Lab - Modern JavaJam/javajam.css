@@ -214,7 +214,7 @@ table td {
 }
 
 table tr:nth-child(even) {
-    background-color: #D2B48C;
+    background-color: #F4DCB8;
 }
 
 table tr:hover {
