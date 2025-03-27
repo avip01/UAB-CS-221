@@ -1,11 +1,11 @@
-#wrapper {
+#wrapper { /* an id used for the main page of the coffee shop. Basic CSS used to develop the structure of the main page */
     width: 100%;
     background: #FEFAEB;
     margin: 0;
     padding: 0;
 }
 
-body {
+body { /* Similar basic CSS used. Only difference is that I added a custom font to the entire body for the website. */
     background: #FAF9F6;
     color: #221811;
     font-family: 'aw-conqueror-didot', serif;
@@ -13,22 +13,21 @@ body {
     padding: 0;
 }
 
-main {
+main { /* same custom font is used for main */
     font-family: 'aw-conqueror-didot', serif;
 }
 
-#imageGrid{
+#imageGrid{ /* I used grid box and some customized parameters to fit the three images in correctly in terms of position. */
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     row-gap: 30px;
-    margin: 3px;
+    margin: 3px 3px 25px 3px;
     justify-content: center;
     justify-items: center;
-    margin-bottom: 25px;
 }
 
-.images{
+.images{ /* Images for main page are sized accordingly with transition. Overlfow was used to prevent the image from going over the edge. */
     width: 300px;
     height: 300px;
     position: relative;
@@ -39,11 +38,11 @@ main {
     transition: transform 0.3s ease;
 }
 
-.images:hover{
+.images:hover{ /* On hover, the image will grow bigger by 1.1x */
     transform: scale(1.1);
 }
 
-.images:before{
+.images:before{ /* this is to define the parameters for the text as well as the opacity of the background when hovered. */
     content: "";
     width: 100%;
     height: 100%;
@@ -54,16 +53,17 @@ main {
     color: #FFFFFF;
     font-weight: bold;
     text-align: center;
-    font-family: 'aw-conqueror-didot', serif;
+    font-family: 'aw-conqueror-didot', serif; /* Custom Font */
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; /* transition for opacity */
 }
 
-.images:hover::before {
+.images:hover::before { /* The opacity will be normal for the image to be seen properly. */
     opacity: 1;
 }
 
+/* These 6 classes are for the content within the images to describe the coffee shop. */
 .images:nth-child(1)::before {
     content: "Friendly and eclectic — JavaJam Coffee Bar is the perfect place to take a break, enjoy a refreshing beverage, and have a snack or light meal.";
 }
@@ -88,12 +88,7 @@ main {
     background-image: url('images/map.jpeg');
 }
 
-.form{
-    text-align: left;
-    padding-left: 25px;
-}
-
-header {
+header { /* This controls the look of the nav bar. I added custom colors, sticky positioning, and an image for the background. */
     background-image: url('images/coffeeHeader.jpeg');
     background-size: cover;
     background-position: center;
@@ -109,13 +104,13 @@ header {
     z-index: 2;
 }
 
-h1 {
+h1 { /* Different custom font and fixed positioning and look of h1 titles. (... at JavaJam) */
     font-family: 'cormorant-garamond', serif;
     line-height: 200%;
     padding-left: 20px;
 }
 
-h2 {
+h2 { /* Custom font again. Fixed positioning and look of the h2 titles. (everything with the same color as "... at JavaJam") */
     color: #8c512d;
     text-align: center;
     padding-left: 10px;
@@ -123,103 +118,128 @@ h2 {
     font-weight: bold;
 }
 
-nav {
+nav { /* Tailored the nav links to look a bit more proper and modern. */
     text-align: center;
     font-weight: bold;
     padding: 0 0 10px 50px;
 }
 
-nav a{
+nav a{ /* Nav anchor links are colored and positioned. */
     color: #F4DCB8;
     margin-right: 10px;
 }
 
-a:hover{
+a:hover{ /* On hover, the nav link changes color. */
     color: #8c512d;
 }
 
-.menu{
+.menu{ /* Grid Box used for the menu list to make it responsive (shown through break points at the end.) and positioned accordingly. */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
 
-.menuItem {
+.menuItem { /* The look of the actual menu items like the background, text, and positioning. I added a border for style and a modern aesthetic. */
     background-color: #FFFFFF;
     border: 1px solid #D2B48C;
     border-radius: 5px;
     padding: 15px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
     margin: 0;
 }
 
-.price {
+.price { /* The price is a different color and bolded to make it look like a actual menu. */
     font-weight: bold;
     color: #8c512d;
     margin-top: 10px;
 }
 
-.table {
+.table { /* This was for the music. I added flex box to make it responsive with breakpoints. Positioned it accordingly again. */
     display: flex;
     justify-content: center;
     margin: 20px auto;
 }
 
-table {
-    border-collapse: separate;
+table { /* Border spacing used to a clearer looking box to avoid the thick lines in-between. Border radius and overflow was a positioning and look adjustment. */
     border-spacing: 0;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-table thead {
+table thead { /* Change the color of the table head cell. The one where all the general information is. */
     background-color: #4a4a4a;
     color: white;
 }
 
-table th {
+table th { /* Positioned it and added a border to it to make it look nicer. */
     padding: 12px;
     border: 1px solid #ddd;
 }
 
-table td {
+table td { /* the silver border gave it a riveting look, and I fixed the positioning. */
     padding: 12px 15px;
     border: 1px solid #ddd;
 }
 
-table tr:nth-child(even) {
+table tr:nth-child(even) { /* Implemented an change on every even cell to a different background color */
     background-color: #F4DCB8;
 }
 
-table tr:hover {
+table tr:hover { /* Changed colors of text and background as well as added a transition on hover so it seemlessly blends. */
     background-color: #303030;
     color: #FFFFFF;
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.jobs{
+.jobs{ /* Added a grid box to make it responsive. Fixed the division between each job and made it look modern with a border. */
     padding-left: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     text-align: center;
+    padding-right: 25px;
+    column-gap: 15px;
 }
 
-.jobs h3{
+.jobs h3{ /* Changed color of the h3 titles for job section. */
     color: #8c512d;
 }
-.form h3{
+.form h3{ /* Changed the color of the text for h3 titles in form as well to the same color to make it homogenous. */
     color: #8c512d;
 }
 
-.form{
+.job{ /* This class took care of individual cells themselves. I added a border, stylistic choices, and a spacing correction. */
+    border: 2px solid #8c512d;
+    background: #FAF9F6;
+    border-radius: 10px;
+    padding: 20px;
+    justify-items: stretch;
+    margin-top: 15px;
+}
+
+.form{ /* This fixed where the form was located and made it homogenous with the other jobs. */
     text-align: center;
+    border: 2px solid #8c512d;
+    background: #FAF9F6;
+    width: 335px;
+    margin: 0 auto;
+    margin-top: 15px; /* I had to keep both margin and margin-top in the code to avoid the form from aligning left */
+    border-radius: 10px;
 }
 
-footer {
+.form label, .form input, .form select, .form textarea { /* Grouped these form inputs together to create spacing between them. */
+    margin: 0 auto 5px auto;
+    width: 50%;
+}
+
+.form form { /* Added flex box to make it responsive and fixed the size of the form. */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+footer { /* Fixed footer look to give it a more modernistic appearance with text styling and proper positioning. */
     background: #D2B48C;
     color: #3D2B1F;
     font-size: 0.9em;
@@ -230,8 +250,13 @@ footer {
     margin: 10px;
 }
 
+/* Below are all breakpoints used for each section of the website except for the table as I felt it was not needed. */
 @media (max-width: 900px) {
     #imageGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -240,16 +265,12 @@ footer {
     #imageGrid {
         grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 900px) {
     .menu {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 600px) {
-    .menu {
+    .jobs{
         grid-template-columns: 1fr;
     }
 }
