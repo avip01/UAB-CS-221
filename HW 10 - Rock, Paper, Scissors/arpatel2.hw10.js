@@ -25,7 +25,39 @@ function botOption() {
     }
 }
 
+function winner(){
+    let user = gameInput();
+    let computer = botOption();
+
+    console.log("You Chose: " + user);
+    console.log("The Computer Chooses: " + computer);
+
+    if (user === computer){
+        return "You tied!";
+    }
+    else if (user === "rock" && computer === "scissors"){
+        return "You Win!";
+    }
+    else if (user === "rock" && computer === "paper"){
+        return "You Lose...";
+    }
+    else if (user === "paper" && computer === "rock"){
+        return "You Win!";
+    }
+    else if (user === "paper" && computer === "scissors"){
+        return "You Lose...";
+    }
+    else if (user === "scissors" && computer === "paper"){
+        return "You Win!";
+    }
+    else if (user === "scissors" && computer === "rock"){
+        return "You Lose...";
+    }
+
+}
+
 window.onload = function() {
-    console.log("You Chose: " + gameInput());
-    console.log("The Computer Chooses: " + botOption());
+    // console.log("You Chose: " + gameInput());
+    // console.log("The Computer Chooses: " + botOption());
+    console.log(winner());
 };
