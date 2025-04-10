@@ -1,9 +1,9 @@
 body{
-    background: linear-gradient(to right, #67074e, #2b0030);
+    background: linear-gradient(to right, #67074e, #1a0033);
 }
 
 header{
-    color: #C8A2C8;
+    color: #F8F8FF;
     text-align: center;
 }
 
@@ -14,8 +14,8 @@ header{
 }
 
 .rock{
-    background: #ff6b6b;
-    color: #fff;
+    background: #b388eb;
+    color: #1a0033;
     padding: 12px 48px;
     margin: 10px;
     border-radius: 12px;
@@ -28,7 +28,7 @@ header{
 }
 
 .paper{
-    background: #007AFF;
+    background: #a259ff;
     color: #fff;
     padding: 12px 48px;
     margin: 10px;
@@ -42,8 +42,8 @@ header{
 }
 
 .scissors{
-    background: #69B84A;
-    color: #fff;
+    background: #e8b4d0;
+    color: #67074e;
     padding: 12px 48px;
     margin: 10px;
     border-radius: 12px;
