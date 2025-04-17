@@ -30,7 +30,6 @@ function domLoaded() {
         }
         else {
             weatherImage.src = "images/warm.png";
-            weatherImage.alt = "Warm";
         }
 
     });
